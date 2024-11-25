@@ -16,62 +16,62 @@ The aim of this short document is to select basic information and functions of F
 
 ### FreeRTOS Documentation 
 
-- [Official books](https://freertos.org/Documentation/RTOS_book.html).
+- [Official books](https://freertos.org/Documentation/02-Kernel/07-Books-and-manual/01-RTOS_book).
 
-- [API reference](https://freertos.org/a00106.html).
+- [API reference](https://www.freertos.org/Documentation/02-Kernel/04-API-references/01-Task-creation/00-TaskHandle).
 
 ### FreeRTOS Tasks Description
 
-- [Tasks Introduction](https://freertos.org/taskandcr.html).
+- [Tasks Introduction](https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/00-Tasks-and-co-routines).
 
-- [Tasks States](https://freertos.org/RTOS-task-states.html).
+- [Tasks States](https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/02-Task-states).
 
-- [Task Priorities](https://freertos.org/RTOS-task-priority.html).
+- [Task Priorities](https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/03-Task-priorities).
 
-- [Task Scheduling](https://freertos.org/single-core-amp-smp-rtos-scheduling.html)
+- [Task Scheduling](https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/04-Task-scheduling)
 
-- [Implementing a Task](https://freertos.org/implementing-a-FreeRTOS-task.html).
+- [Implementing a Task](https://www.freertos.org/Documentation/02-Kernel/02-Kernel-features/01-Tasks-and-co-routines/05-Implementing-a-task).
 
 ### Basic Function Selection
 
-- #### [Task Creation](https://freertos.org/a00019.html)
+- #### [Task Creation](https://www.freertos.org/Documentation/02-Kernel/04-API-references/01-Task-creation/00-TaskHandle)
 
-     + [`xTaskCreate()`](https://freertos.org/a00125.html)
-     + [`vTaskDelete()`](https://freertos.org/a00126.html)
+     + [`xTaskCreate()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/01-Task-creation/01-xTaskCreate)
+     + [`vTaskDelete()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/01-Task-creation/03-vTaskDelete)
 
 - #### [Task Control](https://freertos.org/a00112.html)
 
-     + [`vTaskDelay()`](https://freertos.org/a00127.html)
-     + [`vTaskDelayUntil()`](https://freertos.org/vtaskdelayuntil.html)
-     + [`vTaskSuspend()`](https://freertos.org/a00130.html)
-     + [`vTaskResume()`](https://freertos.org/a00131.html)
-     + [`xTaskResumeFromISR()`](https://freertos.org/taskresumefromisr.html)
+     + [`vTaskDelay()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/02-Task-control/01-vTaskDelay)
+     + [`vTaskDelayUntil()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/02-Task-control/02-vTaskDelayUntil)
+     + [`vTaskSuspend()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/02-Task-control/06-vTaskSuspend)
+     + [`vTaskResume()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/02-Task-control/07-vTaskResume)
+     + [`xTaskResumeFromISR()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/02-Task-control/08-xTaskResumeFromISR)
 
 - #### [Task Utilities](https://freertos.org/a00021.html)
 
-     + [`xTaskGetHandle()`](https://freertos.org/a00021.html#xTaskGetHandle)
-     + [`pcTaskGetName()`](https://freertos.org/a00021.html#pcTaskGetName)
-     + [`vTaskList()`](https://freertos.org/a00021.html#vTaskList)
+     + [`xTaskGetHandle()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/03-Task-utilities/00-Task-utilities#xtaskgethandle)
+     + [`pcTaskGetName()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/03-Task-utilities/00-Task-utilities#pctaskgetname)
+     + [`vTaskList()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/03-Task-utilities/00-Task-utilities#vtasklist)
 
 - #### [RTOS Kernel Control](https://freertos.org/a00020.html)
 
-     + [`vTaskStartScheduler()`](https://freertos.org/a00132.html)
-     + [`vTaskEndScheduler()`](https://freertos.org/a00133.html)
-     + [`taskYIELD()`](https://freertos.org/a00020.html#taskYIELD)
+     + [`vTaskStartScheduler()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/04-RTOS-kernel-control/03-vTaskStartScheduler)
+     + [`vTaskEndScheduler()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/04-RTOS-kernel-control/04-vTaskEndScheduler)
+     + [`taskYIELD()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/04-RTOS-kernel-control/00-Kernel-control#taskyield)
 
 - #### [Semaphores](https://freertos.org/a00113.html)
 
-     + [`xSemaphoreCreateBinary()`](https://freertos.org/xSemaphoreCreateBinary.html)
-     + [`vSemaphoreDelete()`](https://freertos.org/a00113.html#vSemaphoreDelete)
-     + [`xSemaphoreGive()`](https://freertos.org/a00123.html)
-     + [`xSemaphoreTake()`](https://freertos.org/a00122.html)
-     + [`xSemaphoreGiveFromISR()`](https://freertos.org/a00124.html)
-     + [`xSemaphoreTakeFromISR()`](https://freertos.org/xSemaphoreTakeFromISR.html)
+     + [`xSemaphoreCreateBinary()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/10-Semaphore-and-Mutexes/01-xSemaphoreCreateBinary)
+     + [`vSemaphoreDelete()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/10-Semaphore-and-Mutexes/18-vSemaphoreDelete)
+     + [`xSemaphoreGive()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/10-Semaphore-and-Mutexes/15-xSemaphoreGive)
+     + [`xSemaphoreTake()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/10-Semaphore-and-Mutexes/12-xSemaphoreTake)
+     + [`xSemaphoreGiveFromISR()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/10-Semaphore-and-Mutexes/17-xSemaphoreGiveFromISR)
+     + [`xSemaphoreTakeFromISR()`](https://www.freertos.org/Documentation/02-Kernel/04-API-references/10-Semaphore-and-Mutexes/17-xSemaphoreTakeFromISR)
 
 ### Simulators
 
-- [Linux/Posix Simulator](https://freertos.org/FreeRTOS-simulator-for-Linux.html)
-- [Windows Simulator](https://freertos.org/taskresumefromisr.html)
+- [Linux/Posix Simulator](https://freertos.org/Documentation/02-Kernel/03-Supported-devices/04-Demos/03-Emulation-and-simulation/Linux/FreeRTOS-simulator-for-Linux)
+- [Windows Simulator](https://freertos.org/Documentation/02-Kernel/03-Supported-devices/04-Demos/03-Emulation-and-simulation/Windows/FreeRTOS-Windows-Simulator-Emulator-for-Visual-Studio-and-Eclipse-MingW)
 
 
 
